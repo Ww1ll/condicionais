@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("Digite um valor"));
+        var b = parseFloat(prompt("Digite outro valor"));
+        var c = parseFloat(prompt("Digite outro valor"));
+
+        if ( a > b && b > c){
+            alert("A ordem descrescente é: " + c + b + a);
+        } else {
+            if (c > b && b > a){
+                alert("A ordem decrescente é: " + a + b + c);
+            } else{
+                if (c > a && a > b){
+                    alert("A ordem decrescente é: " + b + a + c );
+                } else{
+                    if (a > c && c > b){
+                        alert("A ordem decrescente é: " + b + c + a);
+                    } else{
+                        if (b > c && c > a){
+                            alert("A ordem decrescente é: " + a + c + b);
+                        } else {
+                            if (b > a && a> c){
+                                alert("A ordem decrescente é: " + c + a + b); 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
